@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package MateTalk;
+package com.chatapp;
 
+import com.chatapp.controller.*;
 /**
  *
  * @author Uyen Nhi
@@ -18,7 +19,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("mainscreen.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/signin.fxml"));
         Parent root = loader.load();
         Controller controller = loader.getController();
         controller.setMainWindow(primaryStage);
