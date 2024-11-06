@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" stylesheets="@mainscreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatapp.controller.Controller">
+<VBox prefHeight="600.0" prefWidth="800.0" stylesheets="@mainscreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatapp.controller.SignIn">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -98,7 +98,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Button layoutX="70.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: WHITE; -fx-background-color: #006AFF; -fx-text-fill: WHITE; -fx-border-radius: 100px;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="switchToSignUpButton" layoutX="70.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: WHITE; -fx-background-color: #006AFF; -fx-text-fill: WHITE; -fx-border-radius: 100px;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" onAction="#switchToSignUp"/>
                </children>
             </AnchorPane>
             <Label layoutX="439.0" layoutY="82.0" style="-fx-text-fill: #006AFF;" text="WELCOME BACK!" textAlignment="CENTER">
@@ -109,7 +109,7 @@
             <TextField layoutX="440.0" layoutY="160.0" prefHeight="30.0" prefWidth="225.0" promptText="Username" />
             <TextField layoutX="440.0" layoutY="210.0" prefHeight="30.0" prefWidth="225.0" promptText="Password" />
             <Button layoutX="476.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #006AFF; -fx-background-radius: 100px;" text="SIGN IN" textAlignment="CENTER" />
-            <Button layoutX="468.0" layoutY="265.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: #A52A2A; -fx-font-size: 15px;" text="Forgot your password?" />
+            <Button fx:id="switchToResetPassButton" layoutX="468.0" layoutY="265.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: #A52A2A; -fx-font-size: 15px;" text="Forgot your password?" onAction="#switchToResetPass"/>
       </children>
     </AnchorPane>
   </children>

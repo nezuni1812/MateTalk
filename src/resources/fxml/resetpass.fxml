@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" stylesheets="@mainscreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatapp.controller.Controller">
+<VBox prefHeight="600.0" prefWidth="800.0" stylesheets="@mainscreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatapp.controller.ResetPass">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -98,7 +98,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Button layoutX="70.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: WHITE; -fx-background-color: #006AFF; -fx-text-fill: WHITE; -fx-border-radius: 100px;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="switchToSignUpButton" layoutX="70.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: WHITE; -fx-background-color: #006AFF; -fx-text-fill: WHITE; -fx-border-radius: 100px;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE" onAction="#switchToSignUp"/>
                </children>
             </AnchorPane>
             <Label layoutX="408.0" layoutY="85.0" style="-fx-text-fill: #006AFF;" text="FIND YOUR ACCOUNT" textAlignment="CENTER">
@@ -108,7 +108,7 @@
             </Label>
             <TextField layoutX="440.0" layoutY="160.0" prefHeight="30.0" prefWidth="225.0" promptText="Email" />
             <Button layoutX="476.0" layoutY="230.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #006AFF; -fx-background-radius: 100px;" text="FIND" textAlignment="CENTER" />
-            <Button layoutX="605.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #006AFF; -fx-background-radius: 100px;" text="SIGN IN" textAlignment="CENTER" />
+            <Button fx:id="switchToSignInButton" layoutX="605.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-text-fill: white; -fx-background-color: #006AFF; -fx-background-radius: 100px;" text="SIGN IN" textAlignment="CENTER" onAction="#switchToSignIn"/>
             <Label layoutX="340.0" layoutY="381.0" style="-fx-text-fill: #006AFF;" text="REMEMBER YOUR ACCOUNT?" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="18.0" />

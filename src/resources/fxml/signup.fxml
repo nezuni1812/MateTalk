@@ -44,7 +44,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" stylesheets="@mainscreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatapp.controller.Controller">
+<VBox prefHeight="600.0" prefWidth="800.0" stylesheets="@mainscreen.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatapp.controller.SignUp">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -99,10 +99,10 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Button layoutX="70.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: WHITE; -fx-background-color: #006AFF; -fx-text-fill: WHITE; -fx-border-radius: 100px;" text="SIGN IN" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="switchToSignInButton" layoutX="70.0" layoutY="383.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-border-color: WHITE; -fx-background-color: #006AFF; -fx-text-fill: WHITE; -fx-border-radius: 100px;" text="SIGN IN" textAlignment="CENTER" textFill="WHITE" onAction="#switchToSignIn"/>
                </children>
             </AnchorPane>
-            <Label layoutX="439.0" layoutY="82.0" style="-fx-text-fill: #006AFF;" text="CREATE ACCOUT" textAlignment="CENTER">
+            <Label layoutX="439.0" layoutY="82.0" style="-fx-text-fill: #006AFF;" text="CREATE ACCOUNT" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="28.0" />
                </font>

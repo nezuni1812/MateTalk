@@ -4,27 +4,24 @@
  */
 package com.chatapp;
 
-import com.chatapp.controller.*;
-/**
- *
- * @author Uyen Nhi
- */
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ *
+ * @author Uyen Nhi
+ */
+
 public class Main extends Application {
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/signin.fxml"));
-        Parent root = loader.load();
-        Controller controller = loader.getController();
-        controller.setMainWindow(primaryStage);
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/signup.fxml")); // Ensure correct FXML file is loaded
+        primaryStage.setTitle("Chat Application");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
